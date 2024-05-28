@@ -1,0 +1,694 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap');
+
+nav {
+    position: relative;
+    width: 55.47%;
+    margin: 10px auto 0;
+    height: 35px;
+    border-radius: 3px;
+    font-size: 0;
+}
+
+.TopFixed {
+    background: #0000003b;
+    backdrop-filter: blur(1px);
+}
+
+.Active {
+    background-color: rgb(255 255 255 / 61%);
+    border-radius: 3px;
+    color: #373737 !important;
+}
+
+nav a {
+    line-height: normal;
+    height: 100%;
+    font-size: 16px;
+    padding: 7px;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    text-decoration: none;
+    /* text-transform: uppercase; */
+    text-align: center;
+    color: #000;
+    cursor: pointer;
+    font-family: "Archivo", sans-serif;
+    font-weight: 500;
+}
+
+/* .TopFixed a {
+    color: #fff !important;
+} */
+
+nav a:hover {
+    color: #fff !important;
+    transition: all .3.3s ease 0s;
+
+}
+
+nav .animation {
+    position: absolute;
+    height: 100%;
+    top: 0;
+    z-index: 0;
+    transition: all .5s ease 0s;
+    border-radius: 3px;
+    background-color: rgba(55, 55, 55, 0.473);
+    backdrop-filter: blur(1px);
+}
+
+a:nth-child(1) {
+    width: 100px;
+}
+
+a:nth-child(2) {
+    width: 110px;
+}
+
+a:nth-child(3) {
+    width: 100px;
+}
+
+a:nth-child(4) {
+    width: 160px;
+}
+
+a:nth-child(5) {
+    width: 120px;
+}
+
+a:nth-child(6) {
+    width: 120px;
+}
+
+
+a:nth-child(1):hover~.animation {
+    width: 100px;
+    left: 0;
+}
+
+nav .start-about,
+a:nth-child(2):hover~.animation {
+    width: 110px;
+    left: 100px;
+}
+
+nav .start-blog,
+a:nth-child(3):hover~.animation {
+    width: 100px;
+    left: 210px;
+}
+
+nav .start-portefolio,
+a:nth-child(4):hover~.animation {
+    width: 160px;
+    left: 310px;
+}
+
+nav .start-contact,
+a:nth-child(5):hover~.animation {
+    width: 120px;
+    left: 470px;
+}
+
+nav .start-Careers,
+a:nth-child(6):hover~.animation {
+    width: 120px;
+    left: 590px;
+}
+
+.bi-filter-left {
+    display: none;
+}
+
+.MobileShowOff nav {
+    margin: 0;
+    position: absolute;
+    top: 0;
+
+}
+
+.bi-x-circle {
+    position: absolute;
+    z-index: 2;
+    font-size: 30px;
+    top: 4px;
+    transition: left 0.3s;
+    left: -500px;
+    text-shadow: 2px 2px 6px #000000ed;
+}
+
+.MobileShowOff .bi-x-circle {
+    left: 80%;
+}
+
+.Logo {
+    max-width: 120px;
+    left: 77px !important;
+    top: 9px !important;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+}
+
+@media (min-width: 320px) {
+    .Logo {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+
+    header {
+        display: unset;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        width: 90%;
+        float: left;
+        margin: 0px 0px 0px -500px;
+        transition: margin 0.3s;
+    }
+
+    .bi-filter-left {
+        font-size: 46px;
+        color: #fff;
+        margin: 0px;
+        cursor: pointer;
+        display: block;
+        width: 25px;
+    }
+
+    .animation {
+        display: none;
+    }
+
+    nav a {
+        width: 100%;
+    }
+
+    a:nth-child(1),
+    a:nth-child(2),
+    a:nth-child(3),
+    a:nth-child(4),
+    a:nth-child(5),
+    a:nth-child(6) {
+        width: 100%;
+        height: 45px;
+        padding: 12px;
+    }
+
+    .MobileShowOff .bi-x-circle {
+        left: 80%;
+    }
+
+    .bi-x-circle {
+        font-size: 22px;
+        top: 1px;
+    }
+}
+
+@media (min-width: 375px) {
+    .Logo {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+
+    header {
+        display: unset;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        width: 90%;
+        float: left;
+        margin: 0px 0px 0px -500px;
+        transition: margin 0.3s;
+    }
+
+    .bi-filter-left {
+        font-size: 46px;
+        color: #fff;
+        margin: 0px;
+        cursor: pointer;
+        display: block;
+        width: 25px;
+    }
+
+    .animation {
+        display: none;
+    }
+
+    nav a {
+        width: 100%;
+    }
+
+    a:nth-child(1),
+    a:nth-child(2),
+    a:nth-child(3),
+    a:nth-child(4),
+    a:nth-child(5),
+    a:nth-child(6) {
+        width: 100%;
+        height: 45px;
+        padding: 12px;
+    }
+
+    .MobileShowOff .bi-x-circle {
+        left: 80%;
+    }
+
+    .bi-x-circle {
+        font-size: 25px;
+        top: 1px;
+    }
+}
+
+@media (min-width: 425px) {
+    header {
+        display: unset;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        width: 90%;
+        float: left;
+        margin: 0px 0px 0px -5000px;
+        transition: margin 0.3s;
+    }
+
+    .bi-filter-left {
+        font-size: 46px;
+        color: #fff;
+        margin: 0px;
+        cursor: pointer;
+        display: block;
+        width: 25px;
+    }
+
+    .animation {
+        display: none;
+    }
+
+    nav a {
+        width: 100%;
+    }
+
+    a:nth-child(1),
+    a:nth-child(2),
+    a:nth-child(3),
+    a:nth-child(4),
+    a:nth-child(5),
+    a:nth-child(6) {
+        width: 100%;
+        height: 65px;
+        padding: 23px;
+    }
+
+    .MobileShowOff .bi-x-circle {
+        left: 80%;
+    }
+
+    .bi-x-circle {
+        font-size: 30px;
+        top: 7px;
+    }
+}
+
+@media (min-width: 768px) {
+    header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .Logo {
+        position: relative;
+        margin: unset;
+    }
+
+    nav {
+        width: 475px;
+        position: relative;
+        margin: 10px auto 0;
+        height: 35px;
+        border-radius: 3px;
+        font-size: 0;
+        display: block;
+        float: unset;
+    }
+
+    a:nth-child(1),
+    a:nth-child(2) {
+        width: 70px;
+        height: 100%;
+        padding: 7px;
+    }
+
+    a:nth-child(3) {
+        width: 75px;
+        height: 100%;
+        padding: 7px;
+    }
+
+    a:nth-child(4) {
+        width: 100px;
+        height: 100%;
+        padding: 7px;
+    }
+
+    a:nth-child(5),
+    a:nth-child(6) {
+        width: 80px;
+        height: 100%;
+        padding: 7px;
+    }
+
+    a:nth-child(1):hover~.animation {
+        width: 70px;
+        left: 0;
+    }
+
+    a:nth-child(2):hover~.animation {
+        width: 70px;
+        left: 70px;
+    }
+
+    a:nth-child(3):hover~.animation {
+        width: 75px;
+        left: 140px;
+    }
+
+    a:nth-child(4):hover~.animation {
+        width: 100px;
+        left: 214px;
+    }
+
+    a:nth-child(5):hover~.animation {
+        width: 80px;
+        left: 315px;
+    }
+
+    a:nth-child(6):hover~.animation {
+        width: 80px;
+        left: 394px;
+    }
+
+    nav a {
+        font-size: 12px;
+        padding: 7px;
+    }
+
+    nav {
+        height: 28px;
+    }
+
+    .bi-filter-left {
+        display: none;
+    }
+
+    .animation {
+        display: block;
+    }
+
+    .bi-x-circle {
+        left: -500px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .Logo {
+        position: relative;
+        margin: unset;
+    }
+
+    nav {
+        width: 600px;
+        position: relative;
+        margin: 10px auto 0;
+        height: 35px;
+        border-radius: 3px;
+        font-size: 0;
+        display: block;
+        float: unset;
+    }
+
+    a:nth-child(1),
+    a:nth-child(2) {
+        width: 100px;
+    }
+
+    a:nth-child(2) {
+        width: 110px;
+    }
+
+    a:nth-child(3) {
+        width: 110px;
+    }
+
+    a:nth-child(4) {
+        width: 160px;
+    }
+
+    a:nth-child(5) {
+        width: 120px;
+    }
+
+    a:nth-child(6) {
+        width: 120px;
+    }
+
+    a:nth-child(1):hover~.animation {
+        width: 100px;
+        left: 0;
+    }
+
+    a:nth-child(2):hover~.animation {
+        width: 110px;
+        left: 100px;
+    }
+
+    a:nth-child(3):hover~.animation {
+        width: 110px;
+        left: 210px;
+    }
+
+    a:nth-child(4):hover~.animation {
+        width: 160px;
+        left: 320px;
+    }
+
+    a:nth-child(5):hover~.animation {
+        width: 120px;
+        left: 480px;
+    }
+
+    a:nth-child(6):hover~.animation {
+        width: 120px;
+        left: 600px;
+    }
+
+    nav a {
+        font-size: 16px;
+        padding: 7px;
+    }
+
+    nav {
+        height: 32px;
+    }
+
+    .bi-filter-left {
+        display: none;
+    }
+
+    .animation {
+        display: block;
+    }
+}
+
+@media (min-width: 1440px) {
+    nav {
+        width: 600px;
+        position: relative;
+        margin: 10px auto 0;
+        height: 35px;
+        border-radius: 3px;
+        font-size: 0;
+        display: block;
+        float: unset;
+    }
+
+    a:nth-child(1),
+    a:nth-child(2) {
+        width: 100px;
+    }
+
+    a:nth-child(2) {
+        width: 110px;
+    }
+
+    a:nth-child(3) {
+        width: 110px;
+    }
+
+    a:nth-child(4) {
+        width: 160px;
+    }
+
+    a:nth-child(5) {
+        width: 120px;
+    }
+
+    a:nth-child(6) {
+        width: 120px;
+    }
+
+    a:nth-child(1):hover~.animation {
+        width: 100px;
+        left: 0;
+    }
+
+    a:nth-child(2):hover~.animation {
+        width: 110px;
+        left: 100px;
+    }
+
+    a:nth-child(3):hover~.animation {
+        width: 110px;
+        left: 210px;
+    }
+
+    a:nth-child(4):hover~.animation {
+        width: 160px;
+        left: 320px;
+    }
+
+    a:nth-child(5):hover~.animation {
+        width: 120px;
+        left: 480px;
+    }
+
+    a:nth-child(6):hover~.animation {
+        width: 120px;
+        left: 600px;
+    }
+
+    nav a {
+        font-size: 16px;
+        padding: 7px;
+    }
+
+    nav {
+        height: 32px;
+    }
+
+    .bi-filter-left {
+        display: none;
+    }
+
+    .animation {
+        display: block;
+    }
+}
+
+@media (min-width: 2560px) {
+    nav {
+        width: 600px;
+        position: relative;
+        margin: 10px auto 0;
+        height: 35px;
+        border-radius: 3px;
+        font-size: 0;
+        display: block;
+        float: unset;
+    }
+
+    a:nth-child(1),
+    a:nth-child(2) {
+        width: 100px;
+    }
+
+    a:nth-child(2) {
+        width: 110px;
+    }
+
+    a:nth-child(3) {
+        width: 110px;
+    }
+
+    a:nth-child(4) {
+        width: 160px;
+    }
+
+    a:nth-child(5) {
+        width: 120px;
+    }
+
+    a:nth-child(6) {
+        width: 120px;
+    }
+
+    a:nth-child(1):hover~.animation {
+        width: 100px;
+        left: 0;
+    }
+
+    a:nth-child(2):hover~.animation {
+        width: 110px;
+        left: 100px;
+    }
+
+    a:nth-child(3):hover~.animation {
+        width: 110px;
+        left: 210px;
+    }
+
+    a:nth-child(4):hover~.animation {
+        width: 160px;
+        left: 320px;
+    }
+
+    a:nth-child(5):hover~.animation {
+        width: 120px;
+        left: 480px;
+    }
+
+    a:nth-child(6):hover~.animation {
+        width: 120px;
+        left: 600px;
+    }
+
+    nav a {
+        font-size: 16px;
+        padding: 7px;
+    }
+
+    nav {
+        height: 32px;
+    }
+
+    .bi-filter-left {
+        display: none;
+    }
+
+    .animation {
+        display: block;
+    }
+}

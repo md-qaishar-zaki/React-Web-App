@@ -1,0 +1,233 @@
+.LoginMain {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.LoginMain h2 {
+    font-family: Poppins, sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.LoginPlat {
+    width: 850px;
+    height: 455px;
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+}
+
+.LoginMain h2 {
+    text-align: center;
+}
+
+.LoginMain input[type="text"],
+.LoginMain input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.LoginMain input[type="submit"] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.LoginMain input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+.LoginMain .form-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+
+.LoginMain h2 {
+    text-align: center;
+}
+
+.LoginMain input[type="text"],
+.LoginMain input[type="password"],
+.LoginMain input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.LoginMain input[type="submit"] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.LoginMain input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+.toggle-form {
+    text-align: center;
+}
+
+.LoginMain .form-floating>.form-control,
+.LoginMain .form-floating>.form-control-plaintext {
+    background: #99999929;
+    border: none !important;
+    min-height: unset !important;
+    height: 46px;
+}
+
+.form-floating>.form-control-plaintext~label::after,
+.form-floating>.form-control:focus~label::after,
+.form-floating>.form-control:not(:placeholder-shown)~label::after,
+.form-floating>.form-select~label::after {
+    background: none !important;
+}
+
+.LoginMain .form-floating label {
+    padding: 20px 10px;
+    font-size: 14px;
+}
+
+.form-control:focus {
+    box-shadow: unset !important;
+}
+
+.LoginMain p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 120%;
+    color: #000;
+    margin-bottom: 10px;
+}
+
+.singIn {
+    padding: 8px 30px;
+    background: red;
+    border: none;
+    box-shadow: 4px 4px 10px -6px #000;
+    border-radius: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 120%;
+    color: #fff;
+}
+
+.icon i {
+    font-size: 16px;
+    border-radius: 50%;
+    background: white;
+    border: 1px solid #dcdcdc;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #3f3f3f;
+    box-shadow: 2px 2px 3px 0px #999;
+    margin: 5px;
+}
+
+.singup {
+    padding: 8px 30px;
+    background: none;
+    border: 1px solid #fff;
+    border-radius: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 120%;
+    color: #fff;
+}
+
+.singUp-container h2 {
+    color: #fff !important;
+}
+
+.singUp-container p {
+    color: #fff !important;
+}
+
+.singUp-container {
+    background: red;
+    width: 425px;
+    height: 100%;
+    padding: 61px;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+    transition: 0.6s;
+    position: absolute;
+    left: 425px;
+    right: 0;
+}
+
+.login-container {
+    width: 425px;
+    height: 100%;
+    transition: 0.6s;
+    background-color: #fff;
+    padding: 30px 20px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.LoginMain .mb-3 {
+    margin: 0 !important;
+}
+
+.leftshift {
+    margin-left: -425px !important;
+    left: 425px;
+}
+
+.rightshift {
+    margin-left: 425px !important;
+}
+
+.error {
+    font-size: 10px;
+    line-height: normal;
+    color: #ec0000;
+    margin-top: -7px;
+    display: block;
+    height: 10px;
+}
